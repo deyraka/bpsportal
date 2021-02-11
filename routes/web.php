@@ -35,6 +35,8 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/sdm', [SdmController::class,'index'])->name('sdm');
 
     Route::get('/anggaran', [AnggaranController::class, 'index'])->name('anggaran');
+    
+    Route::get('/keuangan', [KeuanganController::class, 'index'])->name('keuangan');
 
     Route::group(['middleware' => ['role:admin']], function () {
         Route::get('pengguna', [PenggunaController::class, 'index'])->name('pengguna');
