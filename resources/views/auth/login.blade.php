@@ -4,7 +4,8 @@
 <div class="login-box">
     <div class="login-logo">
         <span class="logo-lg">
-            <img src="{{ asset('/images/logo.png')}}" style="width:45px; height:auto;" alt="Logo">{{ config('app.name', 'Laravel') }}
+            <img src="{{ asset('/images/logo.png')}}" style="width:45px; height:auto;" alt="Logo"> {{ config('app.name', 'Laravel') }}
+            <span><h6>v.{{ config('app.version','2.0') }}</h6></span>
         </span>
     </div>
     @include('partials.alert')
