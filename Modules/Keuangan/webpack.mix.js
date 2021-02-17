@@ -7,7 +7,11 @@ require('laravel-mix-merge-manifest');
 mix.setPublicPath('../../public').mergeManifest();
 
 mix.js(__dirname + '/Resources/assets/js/app.js', 'js/keuangan.js')
-    .sass( __dirname + '/Resources/assets/sass/app.scss', 'css/keuangan.css');
+    .sass( __dirname + '/Resources/assets/sass/app.scss', 'css/keuangan.css')
+    .postCss( __dirname + '/Resources/assets/css/cardo.css', 'css/keuangan.css');
+
+// mix.copyDirectory (__dirname + '/ assets', '../../public/modules/keuangan');
+// mix.postCss('resources/assets/css/cardo.css', 'public/modules/keuangan');
 
 if (mix.inProduction()) {
     mix.version();

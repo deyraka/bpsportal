@@ -7,11 +7,12 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="stylesheet" href="{{ asset('/bower_components/admin-lte/plugins/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{ asset('/bower_components/admin-lte/dist/css/adminlte.min.css')}}">
+    <link rel="stylesheet" href="{{ mix('css/keuangan.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link href="{{ asset("/bower_components/admin-lte/dist/css/skins/skin-blue.min.css")}}" rel="stylesheet" type="text/css" />
     <link rel='shortcut icon' type='image/x-icon' href={{ asset("/images/bps.ico")}} />
 </head>
-<style>
+{{-- <style>
     .cards-list {
         z-index: 0;
         width: 100%;
@@ -30,8 +31,7 @@
 
     .cardo > .cardo-content {
         position: relative;
-        width: inherit;
-        height: inherit;
+        padding: 20px 20px 20px 20px;
         border-radius: 20px;
     }
 
@@ -48,29 +48,29 @@
         border-radius: 20px;
     } */
     
-    .cardo .cardo-content img {
+    .cardo .cardo-img {
         width: inherit;
         height: inherit;
         border-radius: 20px;
         object-fit: cover;
     }
-    
-    .cardo .card-title {
-        padding: 20px 20px 20px 20px;
+
+    .cardo .cardo-overlay-img {
         position: absolute;
-        text-align: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1.25rem;
+    }
+    
+    .cardo .cardo-title {
         border-radius: 0px 0px 40px 40px;
         font-family: sans-serif;
-        font-weight: bold;
-        font-size: 30px;
-        /* margin-top: -80px; */
-        /* height: 40px; */
+        font-weight: bolder;
+        font-size: 20px;
         top: 0px;
         left: 0px;
-    }
-
-    .card .card-body {
-        padding: 20px 20px 20px 20px;
     }
     
     .title-white {
@@ -122,8 +122,8 @@
         flex-direction: column;
         }
     }
-</style>
-<body class="hold-transition sidebar-mini">
+</style> --}}
+<body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
     <div class="wrapper">
         @include('layouts.nav')
         @include('keuangan::layouts.left')

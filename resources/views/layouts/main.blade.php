@@ -23,7 +23,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel='shortcut icon' type='image/x-icon' href={{ asset("/images/bps.ico")}} />
     @livewireStyles
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
 <div class="wrapper">
     <!-- Navbar -->
     @include('layouts.nav')

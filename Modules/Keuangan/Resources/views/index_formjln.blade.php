@@ -9,49 +9,52 @@
 @endslot
 @endcomponent
 @endsection
-@section('content')
 
+@section('content')
 <div class="container-fluid">
-    {{-- @component('components.card')
-    @slot('header')
-        Manajemen Form JLN
-    @endslot
-    @slot('body')
-        This view is loaded from module: {!! config('keuangan.name') !!}
-    @endslot
-    @endcomponent --}}
     <div class="row justify-content-md-center">
         <div class="col-md-10">
-            <div class="cardo">
-                <div class="cardo-img"> 
-                    <img src="https://cdn.dribbble.com/users/13449/screenshots/12078823/downloads/the_valley.png" />
-                    <div class="card-title title-white col-md-12">
-                        <p>Manual</p>
-                    </div>
-                    <div class="cardo-body col-md-12">
+            {{-- <div class="cardo">
+                <img class="cardo-img" src="https://cdn.dribbble.com/users/13449/screenshots/12078823/downloads/the_valley.png" />
+                <div class="cardo-overlay-img col-md-12">
+                    <p class="cardo-title title-white">Manual</p>
+                    <div class="col-md-12">
                         <div class="progress cardo-progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                         </div> 
                     </div>
-                    
                 </div>
-            </div>
+            </div> --}}
+            @component('components.cardo')
+            @slot('imgSource')
+                "https://cdn.dribbble.com/users/13449/screenshots/12078823/downloads/the_valley.png"
+            @endslot
+            @slot('cardoTitle')
+                Manual Bro
+            @endslot
+            @slot('cardoBody')
+                <div class="col-md-12">
+                    <div class="progress cardo-progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    </div> 
+                </div>
+            @endslot
+            @endcomponent
         </div>
         <div class="col-md-12">
-            <br>
             <hr class="hr-text" data-content="ATAU">
         </div>
         <div class="col-md-10">
             <div class="cardo">
                 <div class="cardo-content">
-                    <div class="card-title title-black">
-                        <p>Import</p>
+                    <div class="cardo-title title-black col-md-12">
+                        <p>Import File</p>
                     </div>
-                    <div class="cardo-body">
+                    <div class="col-md-12">
                         <form action="{{ route('item.upload.post') }}" method="POST" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="form-group col-md-12">
-                                <label for="exampleInputFile">Import File</label>
+                                {{-- <label for="exampleInputFile">Import File</label> --}}
                                 <div class="input-group">
                                     <div class="custom-file">
                                         <input type="file" name="file" class="custom-file-input" id="exampleInputFile">

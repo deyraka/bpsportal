@@ -13,7 +13,7 @@
 <div class="container-fluid">
     @component('components.card')
     @slot('header')
-        Manajemen Keuangans
+        Manajemen Keuangan
     @endslot
     @slot('body')
         This view is loaded from module: {!! config('keuangan.name') !!}
