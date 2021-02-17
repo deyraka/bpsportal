@@ -13,4 +13,5 @@
 
 Route::prefix('keuangan')->group(function() {
     Route::get('/', 'KeuanganController@index');
+    Route::get('formjln', 'KeuanganController@formjln')->name('formjln');
 });

@@ -36,7 +36,7 @@ Route::group(['middleware' => 'auth'], function(){
 
     Route::get('/anggaran', [AnggaranController::class, 'index'])->name('anggaran');
     
-    Route::get('/keuangan', [KeuanganController::class, 'index'])->name('keuangan');
+    Route::get('/keuangan', [KeuanganController::class, 'index'])->name('keuangans');
 
     Route::group(['middleware' => ['role:admin']], function () {
         Route::get('pengguna', [PenggunaController::class, 'index'])->name('pengguna');
