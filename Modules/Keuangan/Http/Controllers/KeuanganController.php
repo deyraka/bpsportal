@@ -79,6 +79,6 @@ class KeuanganController extends Controller
 
     public function formjln()
     {
-        return view('keuangan::index_formjln');
+        return view('keuangan::formjln.index_formjln');
     }
 }
