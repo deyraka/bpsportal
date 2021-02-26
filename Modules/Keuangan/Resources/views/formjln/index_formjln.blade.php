@@ -20,17 +20,56 @@
             @endslot
             @slot('cardoTitleColor','title-white')
             @slot('cardoTitle')
-                Manual
+                Biasa
             @endslot
             @slot('cardoBody')
-                <div class="col-md-12">
+                {{-- <div class="col-md-12">
                     <div class="progress cardo-progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
                     </div> 
+                </div> --}}
+                <div class="col-md-12">
+                    <h3>Perjadin > 8 jam</h3>
                 </div>
             @endslot
             @endcomponent
         </div>
+        <a href="#" class="col-md-3">
+            <div class="cardo hoverable">
+                <div class="cardo-content">
+                    <div class="cardo-title title-black col-md-12">
+                        <p>Biasa</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>Perjadin > 8 jam</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="col-md-3">
+            <div class="cardo hoverable">
+                <div class="cardo-content">
+                    <div class="cardo-title title-black col-md-12">
+                        <p>Khusus</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>Perjadin Pusat</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="col-md-3">
+            <div class="cardo hoverable">
+                <div class="cardo-content">
+                    <div class="cardo-title title-black col-md-12">
+                        <p>Lokal</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>Perjadin < 8 jam</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
         <div class="col-md-12">
             <hr class="hr-text" data-content="ATAU">
         </div>
