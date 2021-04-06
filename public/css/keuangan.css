@@ -11,8 +11,17 @@
     margin: 30px auto;
     width: 100%;
     border-radius: 20px;
-    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.10), -5px -5px 30px 7px rgba(0,0,0,0.10);
+    /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.10), -5px -5px 30px 7px rgba(0,0,0,0.10); */
+    background: #fff;
+    transition: 0.4s;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
 }
+
+.hoverable:hover {
+    transform: scale(0.95, 0.95);
+    transition: 0.4s;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+  }
 
 .cardo > .cardo-content {
     position: relative;

@@ -34,7 +34,7 @@
             @endslot
             @endcomponent
         </div>
-        <a href="#" class="col-md-3">
+        <a href="#" class="col-md-3" title="Perjalanan Dinas Lebih dari 8 jam">
             <div class="cardo hoverable">
                 <div class="cardo-content">
                     <div class="cardo-title title-black col-md-12">
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </a>
-        <a href="#" class="col-md-3">
+        <a href="#" class="col-md-3" title="Perjalanan Dinas dengan biaya dari BPS Pusat/Satker lain">
             <div class="cardo hoverable">
                 <div class="cardo-content">
                     <div class="cardo-title title-black col-md-12">
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </a>
-        <a href="#" class="col-md-3">
+        <a href="#" class="col-md-3" title="Perjalanan Dinas dalam kota kurang dari 8 jam">
             <div class="cardo hoverable">
                 <div class="cardo-content">
                     <div class="cardo-title title-black col-md-12">
