@@ -14,7 +14,8 @@ class CreateTblFormjlnTable extends Migration
     public function up()
     {
         Schema::create('tbl_formjln', function (Blueprint $table) {
-            $table->string('id')->comment = "generated uuid";
+            $table->string('id',36)->comment('generated uuid');
+            $table->primary('id');
             // set DIPA code nullable for 'jln khusus'
             $table->char('thang', 4)->nullable(true);            
             $table->char('kdsatker', 6)->nullable(true);            

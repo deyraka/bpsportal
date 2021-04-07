@@ -15,6 +15,8 @@ class CreateTblFormjlnNoteLogsTable extends Migration
     {
         Schema::create('tbl_formjln_note_logs', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('id_formjln')->constrained('tbl_formjln')->onDelete('cascade');
+            $table->json('logs')->nullable(true);
             $table->timestamps();
         });
     }
